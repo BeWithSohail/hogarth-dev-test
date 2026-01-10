@@ -1,0 +1,18 @@
+/* =====================================================
+   Card Component
+   ===================================================== */
+
+.card {
+    background-color: $color-surface;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    margin-top: $spacing-lg;
+
+    @include respond-medium {
+        display: flex;
+    }
+}
+
+.card-text {
+    padding: $spacing-md;
+}

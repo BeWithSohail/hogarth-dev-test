@@ -1,0 +1,15 @@
+/* =====================================================
+   Media Query Mixins
+   ===================================================== */
+
+@mixin respond-medium {
+    @media (min-width: 734px) {
+        @content;
+    }
+}
+
+@mixin respond-large {
+    @media (min-width: 1068px) {
+        @content;
+    }
+}
