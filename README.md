@@ -90,13 +90,13 @@ Right-click index.html → Open with Live Server
 
 ## 🌍 Live Website
 
-# 👉 Live Demo:
+# 👇 Live Demo:
 
-https://your-live-site-link.com
+https://hogarth-dev-assignment.vercel.app/
 
 # 🧾 GitHub Repository
 
-# 👉 Source Code:
+# 👇 Source Code:
 
 https://github.com/BeWithSohail/hogarth-dev-test
 
