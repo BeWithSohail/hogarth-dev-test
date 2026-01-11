@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Home – Apple Style</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/images/favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/images/favicon_io/android-chrome-512x512.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- End -->
   </head>
   <body>
     <!-- ================= HERO SECTION ================= -->
@@ -14,22 +44,20 @@
           <picture>
             <source
               media="(min-width:1068px)"
-              srcset="assets/images/large/hero.png"
+              srcset="assets/images/large/hero_large_2x.jpg"
             />
             <source
               media="(min-width:734px)"
-              srcset="assets/images/medium/hero.png"
+              srcset="assets/images/medium/hero_medium_2x.jpg"
             />
             <img
-              src="assets/images/small/hero.png"
+              src="assets/images/small/hero_small_2x.jpg"
               alt="Apple smart home devices"
             />
           </picture>
         </div>
-
         <div class="hero__content">
           <h1 class="hero__title">The future hits home.</h1>
-
           <p class="hero__description">
             Simply connect your favourite devices and transform your house into
             a remarkably smart, convenient and entertaining home. Elevate movie
@@ -40,128 +68,166 @@
         </div>
       </div>
     </header>
-
     <!-- ================= PRODUCTS GRID ================= -->
     <main class="products">
       <div class="container">
         <div class="products__grid">
           <!-- HomePod -->
-          <article class="product-card product-card--dark">
+          <article class="product-card">
             <div class="product-card__content">
               <span class="product-card__eyebrow">HomePod</span>
               <h2 class="product-card__title">Profound sound.</h2>
               <p class="product-card__price">₹32900.00*</p>
-
               <div class="product-card__actions">
                 <a href="#" class="btn btn--primary">Buy</a>
-                <a href="#" class="link">Learn more</a>
+                <a href="#" class="link"
+                  >Learn more <span class="chevron_rt"> &gt;</span>
+                </a>
               </div>
             </div>
-
             <div class="product-card__media">
               <picture>
                 <source
                   media="(min-width:1068px)"
-                  srcset="assets/images/large/homepod.png"
+                  srcset="assets/images/large/homepod_large_2x.jpg"
                 />
                 <source
                   media="(min-width:734px)"
-                  srcset="assets/images/medium/homepod.png"
+                  srcset="assets/images/medium/homepod_medium_2x.jpg"
                 />
-                <img src="assets/images/small/homepod.png" alt="HomePod" />
+                <img
+                  src="assets/images/small/homepod_small_2x.jpg"
+                  alt="HomePod"
+                />
               </picture>
             </div>
           </article>
-
           <!-- HomePod mini -->
-          <article class="product-card product-card--light">
+          <article class="product-card">
             <div class="product-card__content">
               <span class="product-card__eyebrow">HomePod mini</span>
               <h2 class="product-card__title">
                 Surprising sound for its size.
               </h2>
               <p class="product-card__price">₹10900.00*</p>
-
               <div class="product-card__actions">
                 <a href="#" class="btn btn--primary">Buy</a>
-                <a href="#" class="link">Learn more</a>
+                <a href="#" class="link"
+                  >Learn more <span class="chevron_rt"> &gt;</span>
+                </a>
               </div>
             </div>
-
             <div class="product-card__media">
               <picture>
                 <source
                   media="(min-width:1068px)"
-                  srcset="assets/images/large/homepod-mini.png"
+                  srcset="assets/images/large/room_filling_sound_large_2x.jpg"
                 />
                 <source
                   media="(min-width:734px)"
-                  srcset="assets/images/medium/homepod-mini.png"
+                  srcset="assets/images/medium/room_filling_sound_medium_2x.jpg"
                 />
                 <img
-                  src="assets/images/small/homepod-mini.png"
+                  src="assets/images/small/room_filling_sound_small_2x.jpg"
                   alt="HomePod mini"
                 />
               </picture>
             </div>
           </article>
-
           <!-- Apple TV 4K -->
-          <article class="product-card product-card--light">
+          <article class="product-card">
             <div class="product-card__content">
-              <span class="product-card__eyebrow">tv 4K</span>
+              <div class="tilt_img_bg">
+                <picture>
+                  <source
+                    media="(min-width:1068px)"
+                    srcset="assets/images/large/apple_tv_4k_logo_large_2x.png"
+                  />
+                  <source
+                    media="(min-width:734px)"
+                    srcset="
+                      assets/images/medium/apple_tv_4k_logo__vyjj7uki3tui_medium_2x.png
+                    "
+                  />
+                  <img
+                    src="assets/images/small/apple_tv_4k_logo__vyjj7uki3tui_medium.png"
+                    alt="Apple TV 4K"
+                  />
+                </picture>
+              </div>
               <h2 class="product-card__title">
                 The Apple experience.<br />
                 Cinematic in every sense.
               </h2>
               <p class="product-card__price">Starting from ₹14900.00*</p>
-
               <div class="product-card__actions">
                 <a href="#" class="btn btn--primary">Buy</a>
-                <a href="#" class="link">Learn more</a>
+                <a href="#" class="link"
+                  >Learn more <span class="chevron_rt"> &gt;</span></a
+                >
               </div>
             </div>
-
             <div class="product-card__media">
               <picture>
                 <source
                   media="(min-width:1068px)"
-                  srcset="assets/images/large/appletv.png"
+                  srcset="assets/images/large/apple_tv_4k_large_2x.jpg"
                 />
                 <source
                   media="(min-width:734px)"
-                  srcset="assets/images/medium/appletv.png"
+                  srcset="assets/images/medium/apple_tv_4k_medium_2x.jpg"
                 />
-                <img src="assets/images/small/appletv.png" alt="Apple TV 4K" />
+                <img
+                  src="assets/images/small/apple_tv_4k_small_2x.jpg"
+                  alt="Apple TV 4K"
+                />
               </picture>
             </div>
           </article>
-
           <!-- Home App -->
-          <article class="product-card product-card--light">
+          <article class="product-card">
             <div class="product-card__content">
-              <span class="product-card__eyebrow">Home app</span>
+              <div class="tilt_img_bg tilt_img_bg2">
+                <picture>
+                  <source
+                    media="(min-width:1068px)"
+                    srcset="assets/images/large/home_icon_large_2x.png"
+                  />
+                  <source
+                    media="(min-width:734px)"
+                    srcset="assets/images/medium/home_icon_medium.png"
+                  />
+                  <img
+                    src="assets/images/small/home_icon_medium_2x.png"
+                    alt="Apple TV 4K"
+                  />
+                </picture>
+              </div>
+              <span class="home_title"> Home app </span>
               <h2 class="product-card__title">
                 The foundation<br />
                 for a smarter home.
               </h2>
-
               <div class="product-card__actions">
-                <a href="#" class="link">Learn more</a>
+                <a href="#" class="link"
+                  >Learn more <span class="chevron_rt"> &gt;</span></a
+                >
               </div>
             </div>
-
             <div class="product-card__media">
               <picture>
                 <source
                   media="(min-width:1068px)"
-                  srcset="assets/images/large/home-app.png"
+                  srcset="assets/images/large/homeapp_large_2x.jpg"
                 />
                 <source
                   media="(min-width:734px)"
-                  srcset="assets/images/medium/home-app.png"
+                  srcset="assets/images/medium/homeapp_medium_2x.jpg"
                 />
-                <img src="assets/images/small/home-app.png" alt="Home app" />
+                <img
+                  src="assets/images/small/homeapp_small_2x.jpg"
+                  alt="Home app"
+                />
               </picture>
             </div>
           </article>
