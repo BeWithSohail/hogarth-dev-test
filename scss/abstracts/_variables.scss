@@ -1,9 +1,8 @@
 /* =====================================================
    Variables
-   ===================================================== */
+ ===================================================== */
 
 /* ---------- Colors ---------- */
-
 /* Page backgrounds */
 $bg-body: #f5f5f7; 
 $bg-dark: #000; 
@@ -13,11 +12,8 @@ $bg-white: #ffffff;
 /* Text colors */
 $color-black: #000; 
 $color-white: #fff; 
-$color-desciptions:#79797f;
+$color-desciptions:#949499;
 $color-link: #004cc9; 
-
-/* Button colors */
-$btn-primary:#0171e2;
 
 
 /* ---------- Typography ---------- */
@@ -29,6 +25,7 @@ $font-primary: "SF Pro Display", -apple-system,
 $font-size-xs: 12px; 
 $font-size-sm: 14px; 
 $font-size-base: 16px; 
+$font-size-base-medium: 18px;
 $font-size-md: 20px; 
 $font-size-lg: 24px; 
 $font-size-xl: 28px; 
@@ -54,3 +51,12 @@ $spacing-sm: 16px;
 $spacing-md: 24px;
 $spacing-lg: 48px;
 $spacing-xl: 96px;
+
+
+/* Font Weights */
+$fw-300: 300; // Light
+$fw-400: 400; // Regular
+$fw-500: 500; // Medium
+$fw-600: 600; // Semi-bold
+$fw-700: 700; // Bold
+$fw-900: 900; // Black

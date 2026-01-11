@@ -14,17 +14,26 @@
         text-align: center;
 
         img {
-            max-width: 50px;
+            max-width: 60px;
             margin: auto;
+
+            @include mixins.respond-medium {
+                max-width: 50px;
+            }
         }
+
     }
 
     .tilt_img_bg2 {
         text-align: center;
 
         img {
-            max-width: 30px;
+            max-width: 40px;
             margin: auto;
+
+            @include mixins.respond-medium {
+                max-width: 30px;
+            }
         }
     }
 
@@ -69,40 +78,39 @@
             transform 0.3s ease;
 
         &:hover {
-            background-color: variables.$bg-dark;
-            color: variables.$color-white;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             transform: translateY(-4px);
-            .product-card__price {
-                color: variables.$color-white;
-            }
         }
 
-        .chevron_rt{
-            padding-left:2px;
+        .chevron_rt {
+            padding-left: 2px;
             font-size: 12px;
         }
+
         /* Eyebrow */
         .product-card__eyebrow {
             font-size: variables.$font-size-sm;
-            font-weight: 500;
+            font-weight: variables.$fw-500;
             margin-bottom: variables.$spacing-sm;
         }
 
         /* Title */
         .product-card__title {
-            font-size: variables.$font-size-xl;
-            font-weight: 600;
+            font-size: variables.$font-size-lg;
+            font-weight: variables.$fw-700;
             letter-spacing: -0.01em;
-
             margin-top: variables.$spacing-xs;
             margin-bottom: variables.$spacing-sm;
+
+            @include mixins.respond-medium {
+                font-size: variables.$font-size-xl;
+            }
         }
 
         /* Price */
         .product-card__price {
             font-size: variables.$font-size-sm;
-            margin-bottom: variables.$spacing-md;
+            margin-bottom: variables.$spacing-sm;
             color: variables.$color-desciptions;
         }
 
@@ -115,6 +123,16 @@
                 width: 100%;
                 height: auto;
             }
+        }
+    }
+
+    .product-card_dark {
+        background-color: variables.$bg-dark;
+        background-color: variables.$bg-dark;
+        color: variables.$color-white;
+
+        .product-card__price {
+            color: variables.$color-white;
         }
     }
 }

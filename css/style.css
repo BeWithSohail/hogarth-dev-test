@@ -4,33 +4,22 @@
    ===================================================== */
 /* =====================================================
    Variables
-   ===================================================== */
+ ===================================================== */
 /* ---------- Colors ---------- */
 /* Page backgrounds */
 /* Text colors */
-/* Button colors */
 /* ---------- Typography ---------- */
 /* Font sizes */
 /* ---------- Line heights ---------- */
 /* ---------- Border radius ---------- */
 /* ---------- Spacing scale ---------- */
+/* Font Weights */
 /* =====================================================
    Breakpoints
    ===================================================== */
 /* =====================================================
    Media Query Mixins
    ===================================================== */
-/* =====================================================
-   CSS Reset
-   ===================================================== */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* =====================================================
    Root SCSS File
    ===================================================== */
@@ -56,15 +45,20 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
 /* =====================================================
    SF Pro Display – Font Faces
    ===================================================== */
 @font-face {
   font-family: "SF Pro Display";
   src: url("../assets/fonts/sf-pro-display-regular.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -144,11 +138,6 @@ img {
 /* =====================================================
    Footer
    ===================================================== */
-.site-footer {
-  padding: 48px 0;
-  text-align: center;
-}
-
 /* =====================================================
    Root SCSS File
    ===================================================== */
@@ -168,15 +157,17 @@ img {
 .hero__title {
   max-width: 520px;
   margin-inline: auto;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.02em;
   color: #000;
 }
 @media (min-width: 734px) {
   .hero__title {
+    font-weight: 700;
     font-size: 40px;
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 1068px) {
@@ -188,14 +179,16 @@ img {
 .hero__description {
   max-width: 100%;
   margin-inline: auto;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
-  color: #79797f;
-  font-weight: 600;
+  color: #949499;
+  font-weight: 500;
 }
 @media (min-width: 734px) {
   .hero__description {
-    max-width: 700px;
+    max-width: 660px;
+    font-size: 18px;
+    font-weight: 600;
   }
 }
 @media (min-width: 1068px) {
@@ -222,15 +215,25 @@ img {
   text-align: center;
 }
 .products .tilt_img_bg img {
-  max-width: 50px;
+  max-width: 60px;
   margin: auto;
+}
+@media (min-width: 734px) {
+  .products .tilt_img_bg img {
+    max-width: 50px;
+  }
 }
 .products .tilt_img_bg2 {
   text-align: center;
 }
 .products .tilt_img_bg2 img {
-  max-width: 30px;
+  max-width: 40px;
   margin: auto;
+}
+@media (min-width: 734px) {
+  .products .tilt_img_bg2 img {
+    max-width: 30px;
+  }
 }
 .products .product-card__actions .btn {
   margin-right: 8px;
@@ -265,13 +268,8 @@ img {
   /* Media */
 }
 .products .product-card:hover {
-  background-color: #000;
-  color: #fff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   transform: translateY(-4px);
-}
-.products .product-card:hover .product-card__price {
-  color: #fff;
 }
 .products .product-card .chevron_rt {
   padding-left: 2px;
@@ -283,16 +281,21 @@ img {
   margin-bottom: 16px;
 }
 .products .product-card .product-card__title {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   letter-spacing: -0.01em;
   margin-top: 8px;
   margin-bottom: 16px;
 }
+@media (min-width: 734px) {
+  .products .product-card .product-card__title {
+    font-size: 28px;
+  }
+}
 .products .product-card .product-card__price {
   font-size: 14px;
-  margin-bottom: 24px;
-  color: #79797f;
+  margin-bottom: 16px;
+  color: #949499;
 }
 .products .product-card .product-card__media {
   margin-top: auto;
@@ -301,6 +304,14 @@ img {
 .products .product-card .product-card__media img {
   width: 100%;
   height: auto;
+}
+.products .product-card_dark {
+  background-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+.products .product-card_dark .product-card__price {
+  color: #fff;
 }
 
 /* =====================================================
@@ -336,6 +347,7 @@ img {
   font-size: 14px;
   color: #004cc9;
   text-decoration: none;
+  font-weight: 500;
 }
 
 /* =====================================================
