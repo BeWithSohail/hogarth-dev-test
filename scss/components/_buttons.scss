@@ -3,22 +3,23 @@
 .btn {
     display: inline-block;
     padding: 10px 26px;
-    border-radius:variables.$radius-pill;
+    border-radius: variables.$radius-pill;
     font-size: variables.$font-size-sm;
-    font-weight: 500;
+    font-weight: variables.$fw-500;
     text-decoration: none;
-    -webkit-border-radius:variables.$radius-pill;
-    -moz-border-radius:variables.$radius-pill;
-    -ms-border-radius:variables.$radius-pill;
-    -o-border-radius:variables.$radius-pill;
+    -webkit-border-radius: variables.$radius-pill;
+    -moz-border-radius: variables.$radius-pill;
+    -ms-border-radius: variables.$radius-pill;
+    -o-border-radius: variables.$radius-pill;
+
     &:hover {
-            background-color: #005bbf; // slightly darker than #0071e3
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-            transform: translateY(-1px);
-        }
+        background-color: #005bbf; // slightly darker than #0071e3
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+        transform: translateY(-1px);
+    }
 }
 
 .btn--primary {
     background-color: #0071e3;
-    color:variables.$bg-white;
+    color: variables.$bg-white;
 }

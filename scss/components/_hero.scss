@@ -16,33 +16,38 @@
     }
 }
 
-.hero__title { 
+.hero__title {
     max-width: 520px;
     margin-inline: auto;
-    margin-bottom: variables.$spacing-md;
+    margin-bottom: variables.$spacing-xs;
     font-size: variables.$font-size-xl;
-    font-weight: 600;
+    font-weight: variables.$fw-500;
     letter-spacing: -0.02em;
     color: variables.$color-black;
+
     @include mixins.respond-medium {
+        font-weight: variables.$fw-700;
         font-size: variables.$font-size-xxl;
+        margin-bottom: variables.$spacing-md;
     }
 
     @include mixins.respond-large {
-    font-size: variables.$font-size-xxxl;
+        font-size: variables.$font-size-xxxl;
     }
 }
 
 .hero__description {
     max-width: 100%;
     margin-inline: auto;
-    font-size: variables.$font-size-base;
-    line-height: variables.$line-height-relaxed; 
+    font-size: variables.$font-size-sm;
+    line-height: variables.$line-height-relaxed;
     color: variables.$color-desciptions;
-    font-weight: 600;
+    font-weight: variables.$fw-500;
 
     @include mixins.respond-medium {
-        max-width: 700px;
+        max-width: 660px;
+        font-size: variables.$font-size-base-medium;
+        font-weight: variables.$fw-600;
     }
 
     @include mixins.respond-large {
