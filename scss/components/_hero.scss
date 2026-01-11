@@ -6,7 +6,7 @@
 @use "../abstracts/mixins";
 
 .hero__media {
-    max-width: 640px;
+    max-width: 800px;
     margin-inline: auto;
     margin-bottom: variables.$spacing-lg;
 
@@ -16,32 +16,30 @@
     }
 }
 
-.hero__title {
+.hero__title { 
     max-width: 520px;
     margin-inline: auto;
     margin-bottom: variables.$spacing-md;
-
-    font-size: 48px;
+    font-size: variables.$font-size-xl;
     font-weight: 600;
     letter-spacing: -0.02em;
     color: variables.$color-black;
-
     @include mixins.respond-medium {
-        font-size: 44px;
+        font-size: variables.$font-size-xxl;
     }
 
     @include mixins.respond-large {
-        font-size: 48px;
+    font-size: variables.$font-size-xxxl;
     }
 }
 
 .hero__description {
-    max-width: 760px;
+    max-width: 100%;
     margin-inline: auto;
-
-    font-size: 17px;
-    line-height: 1.6;
-    color: variables.$color-white;
+    font-size: variables.$font-size-base;
+    line-height: variables.$line-height-relaxed; 
+    color: variables.$color-desciptions;
+    font-weight: 600;
 
     @include mixins.respond-medium {
         max-width: 700px;
