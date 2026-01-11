@@ -1,9 +1,11 @@
 /* =====================================================
    Global Styles
    ===================================================== */
+@use "../abstracts/variables";
 
 body {
-    background-color: $bg-body;
+background-color: variables.$bg-body;
+font-family: variables.$font-primary;
 }
 
 img {

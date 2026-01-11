@@ -2,18 +2,12 @@
    Typography
    ===================================================== */
 
+@use "../abstracts/variables";
+
 body {
-    font-family: $font-primary;
-    color: $color-text;
-    line-height: 1.5;
+    font-family: variables.$font-primary;
+    font-size: 17px;
+    line-height: 1.47;
+    color: variables.$color-black;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 600;
-}
-
-p {
-    color: $color-muted;
-}

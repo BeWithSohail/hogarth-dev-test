@@ -2,9 +2,19 @@
    Container
    ===================================================== */
 
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .container {
-    width: 100%;
-    max-width: 1068px;
-    margin: 0 auto;
-    padding: 0 $spacing-sm;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: variables.$spacing-sm;
+
+    @include mixins.respond-medium {
+        padding-inline: variables.$spacing-md;
+    }
+
+    @include mixins.respond-large {
+        padding-inline: variables.$spacing-lg;
+    }
 }

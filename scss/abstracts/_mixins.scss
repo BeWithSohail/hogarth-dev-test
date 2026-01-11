@@ -2,14 +2,16 @@
    Media Query Mixins
    ===================================================== */
 
+@use "breakpoints";
+
 @mixin respond-medium {
-    @media (min-width: 734px) {
+    @media (min-width: breakpoints.$bp-medium) {
         @content;
     }
 }
 
 @mixin respond-large {
-    @media (min-width: 1068px) {
+    @media (min-width: breakpoints.$bp-large) {
         @content;
     }
 }

@@ -1,18 +1,327 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |     font-family: $font-primary;
- *   |                  ^^^^^^^^^^^^^
- *   '
- *   scss/base/_typography.scss 6:18  @use
- *   scss/styles.scss 10:1            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      font-family: $font-primary;\a   \2502                   ^^^^^^^^^^^^^\a   \2575 \a   scss/base/_typography.scss 6:18  @use\a   scss/styles.scss 10:1            root stylesheet";
+@charset "UTF-8";
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Variables
+   ===================================================== */
+/* ---------- Colors ---------- */
+/* Page backgrounds */
+/* Text colors */
+/* Button colors */
+/* ---------- Typography ---------- */
+/* ---------- Border radius ---------- */
+/* ---------- Spacing scale ---------- */
+/* =====================================================
+   Breakpoints
+   ===================================================== */
+/* =====================================================
+   Media Query Mixins
+   ===================================================== */
+/* =====================================================
+   CSS Reset
+   ===================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Typography
+   ===================================================== */
+body {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.47;
+  color: #000;
+}
+
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Global Styles
+   ===================================================== */
+body {
+  background-color: #f5f5f7;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================================================
+   SF Pro Display – Font Faces
+   ===================================================== */
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Italics */
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display-black-italic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../assets/fonts/sf-pro-display-light-italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Container
+   ===================================================== */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+@media (min-width: 734px) {
+  .container {
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 1068px) {
+  .container {
+    padding-inline: 48px;
+  }
+}
+
+/* =====================================================
+   Header
+   ===================================================== */
+.hero {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+.site-footer {
+  padding: 48px 0;
+  text-align: center;
+}
+
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Hero Component
+   ===================================================== */
+.hero__media {
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: 48px;
+}
+.hero__media img {
+  width: 100%;
+  height: auto;
+}
+
+.hero__title {
+  max-width: 520px;
+  margin-inline: auto;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+@media (min-width: 734px) {
+  .hero__title {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1068px) {
+  .hero__title {
+    font-size: 48px;
+  }
+}
+
+.hero__description {
+  max-width: 760px;
+  margin-inline: auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #fff;
+}
+@media (min-width: 734px) {
+  .hero__description {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1068px) {
+  .hero__description {
+    max-width: 760px;
+  }
+}
+
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Card Component
+   ===================================================== */
+/* Products wrapper */
+.products {
+  padding-bottom: 96px;
+}
+
+/* Grid layout */
+.products__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 734px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (min-width: 1068px) {
+  .products__grid {
+    gap: 48px;
+  }
+}
+
+/* Base card */
+.product-card {
+  border-radius: 8px;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 620px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* Dark card variant */
+.product-card--dark {
+  background-color: #000;
+  color: #004cc9;
+}
+.product-card--dark .product-card__price {
+  color: #bfbfbf;
+}
+
+/* Light card variant */
+.product-card--light {
+  background-color: #ffffff;
+  color: #000;
+}
+.product-card--light .product-card__price {
+  color: #fff;
+}
+
+/* Text blocks */
+.product-card__eyebrow {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.product-card__title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+
+.product-card__price {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Media */
+.product-card__media {
+  margin-top: auto;
+  padding-top: 32px;
+}
+.product-card__media img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 980px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background-color: #0071e3;
+  color: #fff;
+}
+
+.link {
+  font-size: 14px;
+  color: #0071e3;
+  text-decoration: none;
+}
+
+/* =====================================================
+   Root SCSS File
+   ===================================================== */
+/* =====================================================
+   Home Page Styles
+   ===================================================== */
+.site-main {
+  padding: 48px 0;
+}
+
+.content {
+  margin-top: 48px;
+}
+
+.hero + .products {
+  margin-top: 96px;
+}
+
+/*# sourceMappingURL=style.css.map */

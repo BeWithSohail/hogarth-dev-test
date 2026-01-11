@@ -2,10 +2,16 @@
    Home Page Styles
    ===================================================== */
 
+@use "../abstracts/variables";
+
 .site-main {
-    padding: $spacing-lg 0;
+    padding: variables.$spacing-lg 0;
 }
 
 .content {
-    margin-top: $spacing-lg;
+    margin-top: variables.$spacing-lg;
+}
+
+.hero+.products {
+    margin-top: variables.$spacing-xl;
 }

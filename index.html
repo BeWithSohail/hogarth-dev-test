@@ -3,72 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hogarth Dev Test</title>
-
-    <!-- Compiled CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Smart Home – Apple Style</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <header class="site-header">
-      <div class="container">
-        <h1 class="site-title">Hogarth Dev Test</h1>
+    <!-- ================= HERO SECTION ================= -->
+    <header class="hero">
+      <div class="container hero__container">
+        <div class="hero__media">
+          <picture>
+            <source
+              media="(min-width:1068px)"
+              srcset="assets/images/large/hero.png"
+            />
+            <source
+              media="(min-width:734px)"
+              srcset="assets/images/medium/hero.png"
+            />
+            <img
+              src="assets/images/small/hero.png"
+              alt="Apple smart home devices"
+            />
+          </picture>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title">The future hits home.</h1>
+
+          <p class="hero__description">
+            Simply connect your favourite devices and transform your house into
+            a remarkably smart, convenient and entertaining home. Elevate movie
+            night with theatre-like picture and sound. Play any song, in any
+            room, from anywhere. And control lights, locks and thermostats using
+            Siri. All with the security and privacy of Apple.
+          </p>
+        </div>
       </div>
     </header>
 
-    <main class="site-main">
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <picture>
-          <source
-            media="(min-width:1068px)"
-            srcset="assets/images/large/hero.jpg"
-          />
-          <source
-            media="(min-width:734px)"
-            srcset="assets/images/medium/hero.jpg"
-          />
-          <img src="assets/images/small/hero.jpg" alt="Hero Image" />
-        </picture>
-
-        <div class="hero-content">
-          <h2>Pixel Perfect Responsive Design</h2>
-          <p>Built using HTML and SCSS only</p>
-        </div>
-      </section>
-
-      <!-- CONTENT SECTION -->
-      <section class="content">
-        <div class="container">
-          <div class="card">
-            <picture>
-              <source
-                media="(min-width:1068px)"
-                srcset="assets/images/large/content.jpg"
-              />
-              <source
-                media="(min-width:734px)"
-                srcset="assets/images/medium/content.jpg"
-              />
-              <img src="assets/images/small/content.jpg" alt="Content Image" />
-            </picture>
-
-            <div class="card-text">
-              <h3>Responsive Layout</h3>
-              <p>
-                This layout adapts perfectly across large, medium and small
-                screens without JavaScript or frameworks.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
+    <!-- ================= PRODUCTS GRID ================= -->
+    <main class="products">
       <div class="container">
-        <p>© 2026 Hogarth Dev Test</p>
+        <div class="products__grid">
+          <!-- HomePod -->
+          <article class="product-card product-card--dark">
+            <div class="product-card__content">
+              <span class="product-card__eyebrow">HomePod</span>
+              <h2 class="product-card__title">Profound sound.</h2>
+              <p class="product-card__price">₹32900.00*</p>
+
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary">Buy</a>
+                <a href="#" class="link">Learn more</a>
+              </div>
+            </div>
+
+            <div class="product-card__media">
+              <picture>
+                <source
+                  media="(min-width:1068px)"
+                  srcset="assets/images/large/homepod.png"
+                />
+                <source
+                  media="(min-width:734px)"
+                  srcset="assets/images/medium/homepod.png"
+                />
+                <img src="assets/images/small/homepod.png" alt="HomePod" />
+              </picture>
+            </div>
+          </article>
+
+          <!-- HomePod mini -->
+          <article class="product-card product-card--light">
+            <div class="product-card__content">
+              <span class="product-card__eyebrow">HomePod mini</span>
+              <h2 class="product-card__title">
+                Surprising sound for its size.
+              </h2>
+              <p class="product-card__price">₹10900.00*</p>
+
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary">Buy</a>
+                <a href="#" class="link">Learn more</a>
+              </div>
+            </div>
+
+            <div class="product-card__media">
+              <picture>
+                <source
+                  media="(min-width:1068px)"
+                  srcset="assets/images/large/homepod-mini.png"
+                />
+                <source
+                  media="(min-width:734px)"
+                  srcset="assets/images/medium/homepod-mini.png"
+                />
+                <img
+                  src="assets/images/small/homepod-mini.png"
+                  alt="HomePod mini"
+                />
+              </picture>
+            </div>
+          </article>
+
+          <!-- Apple TV 4K -->
+          <article class="product-card product-card--light">
+            <div class="product-card__content">
+              <span class="product-card__eyebrow">tv 4K</span>
+              <h2 class="product-card__title">
+                The Apple experience.<br />
+                Cinematic in every sense.
+              </h2>
+              <p class="product-card__price">Starting from ₹14900.00*</p>
+
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary">Buy</a>
+                <a href="#" class="link">Learn more</a>
+              </div>
+            </div>
+
+            <div class="product-card__media">
+              <picture>
+                <source
+                  media="(min-width:1068px)"
+                  srcset="assets/images/large/appletv.png"
+                />
+                <source
+                  media="(min-width:734px)"
+                  srcset="assets/images/medium/appletv.png"
+                />
+                <img src="assets/images/small/appletv.png" alt="Apple TV 4K" />
+              </picture>
+            </div>
+          </article>
+
+          <!-- Home App -->
+          <article class="product-card product-card--light">
+            <div class="product-card__content">
+              <span class="product-card__eyebrow">Home app</span>
+              <h2 class="product-card__title">
+                The foundation<br />
+                for a smarter home.
+              </h2>
+
+              <div class="product-card__actions">
+                <a href="#" class="link">Learn more</a>
+              </div>
+            </div>
+
+            <div class="product-card__media">
+              <picture>
+                <source
+                  media="(min-width:1068px)"
+                  srcset="assets/images/large/home-app.png"
+                />
+                <source
+                  media="(min-width:734px)"
+                  srcset="assets/images/medium/home-app.png"
+                />
+                <img src="assets/images/small/home-app.png" alt="Home app" />
+              </picture>
+            </div>
+          </article>
+        </div>
       </div>
-    </footer>
+    </main>
   </body>
 </html>

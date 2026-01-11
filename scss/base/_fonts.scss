@@ -1,0 +1,44 @@
+/* =====================================================
+   SF Pro Display – Font Faces
+   ===================================================== */
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../assets/fonts/sf-pro-display-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../assets/fonts/sf-pro-display-medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../assets/fonts/sf-pro-display-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Italics */
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../assets/fonts/sf-pro-display-black-italic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../assets/fonts/sf-pro-display-light-italic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}

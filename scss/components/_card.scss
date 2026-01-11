@@ -2,17 +2,90 @@
    Card Component
    ===================================================== */
 
-.card {
-    background-color: $color-surface;
-    border-radius: $radius-lg;
-    overflow: hidden;
-    margin-top: $spacing-lg;
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
-    @include respond-medium {
-        display: flex;
+/* Products wrapper */
+.products {
+    padding-bottom: variables.$spacing-xl;
+}
+
+/* Grid layout */
+.products__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: variables.$spacing-sm;
+
+    @include mixins.respond-medium {
+        grid-template-columns: repeat(2, 1fr);
+        gap: variables.$spacing-md;
+    }
+
+    @include mixins.respond-large {
+        gap: variables.$spacing-lg;
     }
 }
 
-.card-text {
-    padding: $spacing-md;
+/* Base card */
+.product-card {
+    border-radius: variables.$radius-md;
+    padding: 40px;
+    //keptfixedforpixelaccuracydisplay: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 620px;
+    -webkit-border-radius: variables.$radius-md;
+    -moz-border-radius: variables.$radius-md;
+    -ms-border-radius: variables.$radius-md;
+    -o-border-radius: variables.$radius-md;
+}
+
+/* Dark card variant */
+.product-card--dark {
+    background-color: #000;
+    color: variables.$color-link;
+
+    .product-card__price {
+        color: #bfbfbf;
+    }
+}
+
+/* Light card variant */
+.product-card--light {
+    background-color: variables.$bg-white;
+    color: variables.$color-black;
+
+    .product-card__price {
+        color: variables.$color-white;
+    }
+}
+
+/* Text blocks */
+.product-card__eyebrow {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.product-card__title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+}
+
+.product-card__price {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* Media */
+.product-card__media {
+    margin-top: auto;
+    padding-top: 32px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }

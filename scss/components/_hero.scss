@@ -2,31 +2,52 @@
    Hero Component
    ===================================================== */
 
-.hero {
-    position: relative;
-}
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
 
-.hero-content {
-    padding: $spacing-md;
-    background: rgba(0, 0, 0, 0.55);
+.hero__media {
+    max-width: 640px;
+    margin-inline: auto;
+    margin-bottom: variables.$spacing-lg;
 
-    @include respond-medium {
-        padding: $spacing-lg;
-    }
-
-    @include respond-large {
-        padding: 64px;
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
-.hero h2 {
-    font-size: 22px;
+.hero__title {
+    max-width: 520px;
+    margin-inline: auto;
+    margin-bottom: variables.$spacing-md;
 
-    @include respond-medium {
-        font-size: 28px;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: variables.$color-black;
+
+    @include mixins.respond-medium {
+        font-size: 44px;
     }
 
-    @include respond-large {
-        font-size: 34px;
+    @include mixins.respond-large {
+        font-size: 48px;
+    }
+}
+
+.hero__description {
+    max-width: 760px;
+    margin-inline: auto;
+
+    font-size: 17px;
+    line-height: 1.6;
+    color: variables.$color-white;
+
+    @include mixins.respond-medium {
+        max-width: 700px;
+    }
+
+    @include mixins.respond-large {
+        max-width: 760px;
     }
 }
